@@ -61,7 +61,7 @@ struct S1_node {
 double f_value(int regionNum, double r, double phi, double t) {
    switch (regionNum) {
       case 0: {
-         return 20*t + 0.002;
+         return 2*std::exp(t);
       }
 
       default:
@@ -74,7 +74,7 @@ double f_value(int regionNum, Node node, double t) { return f_value(regionNum, n
 double lambda_value(int regionNum, double r, double phi) {
    switch (regionNum) {
       case 0: {
-         return 100;
+         return 1;
       }
 
       default:
@@ -87,7 +87,7 @@ double lambda_value(int regionNum, Node node) { return lambda_value(regionNum, n
 double s1_u_value(int s1_funcNum, double r, double phi, double t) {
    switch (s1_funcNum) {
       case 0: {
-         return t*t;
+         return std::exp(t);
       }
 
       default:
@@ -99,7 +99,7 @@ double s1_u_value(int s1_funcNum, Node node, double t) { return s1_u_value(s1_fu
 
 double chi_value(int regionNum, double r, double phi) {
    switch (regionNum) {
-         case 0: return 0.001;
+         case 0: return 1;
 
       default:
          throw std::runtime_error("Значения функции chi для области с номером " + std::to_string(regionNum) +
@@ -110,7 +110,7 @@ double chi_value(int regionNum, Node node) { return chi_value(regionNum, node.r,
 
 double sigma_value(int regionNum, double r, double phi) {
    switch (regionNum) {
-         case 0: return 10;
+         case 0: return 1;
 
       default:
          throw std::runtime_error("Значения функции sigma для области с номером " + std::to_string(regionNum) +
@@ -118,5 +118,3 @@ double sigma_value(int regionNum, double r, double phi) {
    }
 }
 double sigma_value(int regionNum, Node node) { return sigma_value(regionNum, node.r, node.phi); }
-
-

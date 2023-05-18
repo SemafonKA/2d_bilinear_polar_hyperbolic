@@ -246,7 +246,8 @@ namespace IterSolvers {
          size_t size = x.size();
 
          LU& lu = *_lu_mat;                        // неполное LU(sq) разложение для матрицы A
-
+         lu.MakeLuFor(A);
+         
          vector<double>& local_x = *_tmp5;         // local_x
          lu.UMultToVec(x, local_x);
 
@@ -547,6 +548,7 @@ namespace IterSolvers {
          auto size = x.size();
 
          LU& lu = *_lu_mat;
+         lu.MakeLuFor(A);
 
          vector<double>& tmp = *_tmp5;
          vector<double>& r = *_tmp1;               // r0 = L^-1 * (f - A * x)
