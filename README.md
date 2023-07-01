@@ -8,9 +8,7 @@
 
 Решаемое уравнение в общем виде: 
 
-$$
--{\rm div}(\lambda {\rm grad}(u)) + \gamma u + \sigma \frac{\partial u}{\partial t} + \chi \frac{\partial^{2}u}{\partial t^{2}} = f
-$$
+$$-{\rm div}(\lambda {\rm grad}(u)) + \gamma u + \sigma \frac{\partial u}{\partial t} + \chi \frac{\partial^{2}u}{\partial t^{2}} = f$$
 
 Область интегрирования: $\Omega$
 
@@ -18,8 +16,8 @@ $$
 
 Начальные условия:
 
-$$ \left. u \right|_{t=t_{0}} = u_{0}, $$
-$$ \left. \frac{\partial u}{\partial t} \right|_{t=t_{0}} = u^{'}_{0}, $$
+$$\left. u \right|_{t=t_{0}} = u_{0},$$
+$$\left. \frac{\partial u}{\partial t} \right|_{t=t_{0}} = u^{'}_{0},$$
 
 и тогда следующий слой $u_{1}$ будет считаться по следующей формуле:
 
@@ -29,14 +27,14 @@ $$
 
 либо можем задать следующий слой сразу:
 
-$$ \left. u \right|_{t=t_{0}} = u_{0}, $$
-$$ \left. u \right|_{t=t_{1}} = u_{1}. $$
+$$\left. u \right|_{t=t_{0}} = u_{0},$$
+$$\left. u \right|_{t=t_{1}} = u_{1}.$$
 
 Краевые условия:
 
-$$ u|_{s_1} = u_{g} $$
-$$ \lambda \frac{\partial u}{\partial n} = \theta $$
-$$ \lambda \frac{\partial u}{\partial n} |_{s_3} + \beta(u|_{s_3} - u_{\beta}) = 0 $$
+$$u|_{s_1} = u_{g}$$
+$$\lambda \frac{\partial u}{\partial n} = \theta$$
+$$\lambda \frac{\partial u}{\partial n} |_{s_3} + \beta(u|_{s_3} - u_{\beta}) = 0$$
 
 $\lambda$ - коэффициент диффузии,
 
