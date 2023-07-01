@@ -18,12 +18,8 @@ $$
 
 Начальные условия:
 
-$$
-\begin{gather*}
-   \left. u \right|_{t=t_{0}} = u_{0},  \\
-   \left. \frac{\partial u}{\partial t} \right|_{t=t_{0}} = u^{'}_{0}, 
-\end{gather*}
-$$
+$$ \left. u \right|_{t=t_{0}} = u_{0}, $$
+$$ \left. \frac{\partial u}{\partial t} \right|_{t=t_{0}} = u^{'}_{0}, $$
 
 и тогда следующий слой $u_{1}$ будет считаться по следующей формуле:
 
@@ -33,22 +29,14 @@ $$
 
 либо можем задать следующий слой сразу:
 
-$$
-\begin{gather*}
-   \left. u \right|_{t=t_{0}} = u_{0}, \\
-   \left. u \right|_{t=t_{1}} = u_{1}.
-\end{gather*}
-$$
+$$ \left. u \right|_{t=t_{0}} = u_{0}, $$
+$$ \left. u \right|_{t=t_{1}} = u_{1}. $$
 
 Краевые условия:
 
-$$
-\begin{gather*}
-   u|_{s_1} = u_{g} \\
-   \lambda \frac{\partial u}{\partial n} = \theta \\
-   \lambda \frac{\partial u}{\partial n} |_{s_3} + \beta(u|_{s_3} - u_{\beta}) = 0
-\end{gather*}
-$$
+$$ u|_{s_1} = u_{g} $$
+$$ \lambda \frac{\partial u}{\partial n} = \theta $$
+$$ \lambda \frac{\partial u}{\partial n} |_{s_3} + \beta(u|_{s_3} - u_{\beta}) = 0 $$
 
 $\lambda$ - коэффициент диффузии,
 
