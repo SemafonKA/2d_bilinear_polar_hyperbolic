@@ -359,7 +359,7 @@ void addLocalMatrixToGlobal(const Rectangle& rect, SparseMatrix& globalMat, cons
             ;
 
          globalMat.ggl[id] += localMat[i][k];
-         globalMat.ggu[id] += localMat[i][k];
+         globalMat.ggu[id] += localMat[k][i];
       }
       // добавляем диагональные элементы
       globalMat.di[elems[i]] += localMat[i][i];
